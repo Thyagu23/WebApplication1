@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewData["Title"] = "Employer_LookUp";
+}
+
+<h2>Employer_LookUp</h2>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin:auto;width:100%;border-radius:15px;border:1px solid #808080;padding:50px;">
+        <div class="row">
+            <label for="Name" class="col-md-2 control-label">Employer :</label>
+            <div class="form-group col-md-5" style="margin-left:05px">
+                <input type="text" class="form-control" id="Name" />
+            </div>
+            <a href="~/Home/EmployerNewRegistration"><input type=button align="right" value='NEW'></a>
+        </div>
+      
+        <hr />
+
+        <table style="width:100%">
+            <tr>
+                <th>Employer Name</th>
+                <th>Address </th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+                <th>Telephone</th>
+                <th>Contact Person</th>
+
+            </tr>
+            @*
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>raja</td>
+                    <td></td>
+                    <td>sjakghahfjhg</td>
+                    <td>ghsfdjkghjkld</td>
+                    <td>merlin</td>
+                    <td>tx</td>
+                    <td>23132</td>
+                    <td>901-901-9999</td>
+                    <td>888-888-8888</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>raja</td>
+                    <td></td>
+                    <td>sjakghahfjhg</td>
+                    <td>ghsfdjkghjkld</td>
+                    <td>merlin</td>
+                    <td>tx</td>
+                    <td>23132</td>
+                    <td>901-901-9999</td>
+                    <td>888-888-8888</td>
+                </tr>*@
+
+
+        </table>
+
+        <hr />
+
+        <div>
+            <a href="~/Home/Index"><input type=button value='Cancel'></a>
+        </div>
+    </div>
+</body>
+</html>
+
+

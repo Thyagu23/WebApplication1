@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/menu.css" rel="stylesheet" />
+    @*<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>*@
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+
+    @*<script src="@Url.Content("~/Scripts/jquery-3.4.1.min.js")"></script>*@
+    @*<script type="text/javascript" src="~/Scripts/umd/popper.min.js"></script>*@
+    @*<link href="@Url.Content("~/Content/Gridmvc.css")" rel="stylesheet" />*@
+    <script src="@Url.Content("~/Content/menu.css")"></script>
+    @*<script src="@Url.Content("~/Scripts/gridmvc.min.js")"></script>*@
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
+    @*<link href="~/Content/font-awesome.min.css" rel="stylesheet" />*@
+    <link href="~/Content/menu.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+    <link type="text/css" href="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" />
+    @*<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/jquery.dataTables.min.js"></script>*@
+
+
+
+    <script>
+        $(window).on('beforeunload', function () {
+            $.ajax({
+                type: 'POST',
+                url: '/Users/Logout',
+                success: function () {
+                }
+            });
+        });
+
+        $(document).ready(function () {
+
+            $('#logout').click(function () {
+                $.ajax({
+                    type: 'POST',
+                    url: '/Users/Logout',
+                    success: function () {
+                    }
+                });
+            });
+
+        });
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</head>
+<body style="padding-right:8%;padding-top:0%;padding-left:8%;width:100%">
+    @if (ViewBag.Title != "Login")
+    {
+        <div style="background-color:gainsboro;padding-right:8%;padding-left:8%;padding-top:0%;width:100%;">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <h1 style="display:inline; white-space:nowrap;margin-left:38%;font-family:Algerian;">
+                <b style="color:black;font-size:65px">A</b><b style="color:cornflowerblue">rtemis</b>
+            </h1>
+            <div id="image" style="display:inline;margin-left:19%;padding-top:0%;">
+                @*<img src="~/Image/plutuslogo.png" />*@
+            </div>
+            <div style="padding-top:0.5%">
+            </div>
+        </div>
+
+
+        <div id="Username" style="display:inline;margin-left:75%;">
+            <label>
+                <b style="color:black;">Welcome : </b>
+            </label>
+            <label style="text-decoration-line:underline">
+                <b style="color:darkblue;">
+                    Thyagaraja@calpion.com
+                </b>
+            </label>
+            <div style="padding-top:0.5%">
+            </div>
+
+        </div>
+
+
+        <div id="mySidenav" class="sidenav" style="white-space:nowrap;text-align:left;margin-left:0%;background-color:darkgray">
+            <h3 style="margin-left:25%"><b>A</b>rtemis</h3>
+            <hr />
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul style="list-style-type:none;">
+
+                <li><a href="~/Home/Index" class="fa fa-home">Favourite</a></li>
+                <li><a href="~/Home/Index" class="fa fa-slideshare">Menu</a></li>
+                <li><a href="~/FileRepository/Index" class="fa fa-folder-open">Practice</a></li>
+                <li><a href="~/BatchSearch/Search" class="fa fa-search-plus">Registry</a></li>
+                <li><a href="~/Project/Project" class="fa fa-briefcase"> Refferals</a></li>
+                <li><a href="~/BatchType/BatchType" class="fa fa-leanpub"> Messages</a></li>
+                <li><a href="~/PhoneBook/PhoneBook" class="fa fa-book fa-fw">Documents</a></li>
+                <li><a href="~/Users/Index" class="fa fa-user">Admin</a></li>
+
+                <li><a href="~/Login/Login" id="logout" class="fa fa-sign-out">  Logout</a></li>
+            </ul>
+        </div>
+
+
+        <div style="padding-top:1%">
+        </div>
+    }
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - A Calpion Product</p>
+        </footer>
+    </div>
+
+</body>
+</html>

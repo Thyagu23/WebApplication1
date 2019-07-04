@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewData["Title"] = "NewInsuranceGroupRegistration";
+}
+
+<h2>NewInsuranceGroupRegistration</h2>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+<div style="margin:auto;width:100%;border-radius:15px;border:1px solid #808080;padding:50px;">
+
+
+    <div class="row">
+        <label for="Name" class="col-md-2 control-label">Insurance Group Name:</label>
+        <div class="form-group col-md-3" style="margin-left:35px">
+            <input type="text" class="form-control" id="Name" />
+        </div>
+
+
+        <label for="Name" class="col-md-2 control-label">Type:</label>
+        <div class="form-group col-md-3" style="margin-left:35px">
+            <input type="text" class="form-control" id="Name" />
+        </div>
+    </div>
+
+    <div class="row">
+        <label for="Name" class="col-md-2 control-label">Payer ID:</label>
+        <div class="form-group col-md-3" style="margin-left:35px">
+            <input type="text" class="form-control" id="Name" />
+        </div>
+
+        <label for="Address1" class="col-md-2 control-label">Medigap ID:</label>
+        <div class="form-group col-md-3" style="margin-left:35px">
+            <input type="text" class="form-control" id="Address1" />
+        </div>
+    </div>
+    <div class="row">
+        <label for="Address1" class="col-md-2 control-label">Source of Payment:</label>
+        <div class="form-group col-md-3" style="margin-left:35px">
+            <input type="text" class="form-control" id="Address1" />
+        </div>
+
+        <label for="Address1" class="col-md-2 control-label">Provider ID Type:</label>
+        <div class="form-group col-md-3" style="margin-left:35px">
+            <input type="text" class="form-control" id="Address1" />
+        </div>
+    </div>
+    <div class="row">
+        <label for="Address1" class="col-md-2 control-label">Group ID Type:</label>
+        <div class="form-group col-md-3" style="margin-left:35px">
+            <input type="text" class="form-control" id="Address1" />
+        </div>
+    </div>
+
+
+    <hr />
+    <h4><u>Insurance Assignment(HCFA BOX 27)</u></h4>
+
+
+    <div class="row">
+        <label for="Address1" class="col-md-2 control-label">Accept Assignment:</label>
+        <div class="form-group col-md-3" style="margin-left:35px">
+            <input type="text" class="form-control" id="Address1" />
+        </div>
+    </div>
+
+
+
+    <input type="button" id="AssignmentOverride" value="AssignmentOverride" />
+
+    <hr />
+    <h4><u>Provider Insurance Number</u></h4>
+
+    <table style="width:100%">
+        <tr>
+            <th>Provider Name</th>
+            <th>Provider Number</th>
+            <th>Group Number</th>
+        </tr>
+
+    </table>
+    <div class="modal-footer">
+
+    </div>
+    <div class="modal-footer">
+
+        <input type="button" id="AssignmentOverride" value="Cancel" />
+        <input type="button" id="Assignmide" value="OK" />
+    </div>
+</div>
+

@@ -1,0 +1,1164 @@
+﻿
+@{
+    ViewData["Title"] = "Insurance";
+}
+
+<h1>Insurance</h1>
+
+<link href="~/css/Tab.css" rel="stylesheet" />
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/site.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+
+    <div class="container">
+        <section style="background-color:whitesmoke">
+            @*<div class="First_Tab">*@
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="list-group">
+
+                        @*<a href="#" class="list-group-item list-group-item-info" style="width: 180px">Insurance</a>*@
+                        <a href="#" class="list-group-item list-group-item-action " style="width: 180px">Address</a>
+                        <a href="#camp-tab3" class="list-group-item list-group-item-action " style="width: 180px">Provider Numbers</a>                      
+                        <a href="#camp-tab10" class="list-group-item list-group-item-action " style="width: 180px">Refunds</a>
+
+                    </div>
+                </div>
+                <div class="Display_01 col-md-9" id="camp-tab1" style="display:none;">
+
+                    <div class="row">
+                        <div class=" col-md-6">
+                            <div class="row">
+                                <label for="Name" class="col-md-4 control-label">Name:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="Name" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="Address1" class="col-md-4 control-label">Address1:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="Address1" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="Address2" class="col-md-4 control-label">Address2:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="Address2" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="City" class="col-md-4 control-label">City:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="City" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="State" class="col-md-4 control-label">State:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="State" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="Country" class="col-md-4 control-label">Country:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="Country" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="Zip" class="col-md-4 control-label">Zip:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="Zip" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="Tel" class="col-md-4 control-label">Tel:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="Tel" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="AltTel" class="col-md-4 control-label">Alt Tel:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="ALtTel" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="Fax" class="col-md-4 control-label">Fax:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="Fax" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="E-mail" class="col-md-4 control-label">E-mail:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="E-mail" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="Website" class="col-md-4 control-label">Website:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="Website" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="SourceofPayment" class="col-md-5 control-label">Source of Payment:</label>
+                                <div class="form-group col-md-5">
+                                    <input type="text" class="form-control" id="SourceofPayemnt" />
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <label for="InsuranceType" class="col-md-5 control-label">Insurance Type:</label>
+                                <div class="form-group col-md-5">
+                                    <input type="text" class="form-control" id="InsuranceType" />
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-md-6" style="border-left: 1px solid grey">
+                            <div class="row">
+                                <label for="PayerID" class="col-md-5 control-label">Payer ID:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="PayerID" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="MedigapID" class="col-md-5 control-label">Medigap ID:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="MedigapID" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="ERAPayerID" class="col-md-5 control-label">ERA Payer ID:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="ERAPayerID" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="ManagedCarePlanID" class="col-md-6 control-label">Managed Care Plan ID:</label>
+                                <div class="form-group col-md-5">
+                                    <input type="text" class="form-control" id="ManagedCarePlanID" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="EligibilityPayerID" class="col-md-5 control-label">Eligibility Payer ID:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="EligibilityPayerID" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="LiabilityCarrierCode" class="col-md-6 control-label">Liability Carrier Code:</label>
+                                <div class="form-group col-md-5">
+                                    <input type="text" class="form-control" id="LiabilityCarrierCode" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="FeeSchdule" class="col-md-5 control-label">Fee Schdule:</label>
+                                <div class="form-group col-md-5" style="margin-left:35px">
+                                    <select class="form-control" id="FeeSchdule" name="FeeSchdule">
+                                        <option>Fee Schdule</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row" style="border-top: 1px solid grey">
+                                <label for="ClaimSubmission" class="col-md-5 control-label">Claim Submission:</label>
+                                <div class="row">
+                                    <div class="form-group col-md-5" style="margin-left:25px">
+                                        <fieldset id="group1">
+                                            <input type="radio" value="Electronic" name="Electronic">Electronic<br />
+                                            <input type="radio" value="Professional" name="Professional">Professional<br />
+                                            <input type="radio" value="Paper" name="Paper">Paper<br />
+                                        </fieldset>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-4" style="margin-left:20px">
+                                            <fieldset id="group2">
+                                                <input type="radio" value="Institutional" name="Institutional">Institutional<br />
+                                                <input type="radio" value="Dental" name="Dental">Dental<br />
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" style="border-top: 1px solid grey">
+                                <label for="InsurancePlanType" style="margin-top:20px" class="col-md-6 control-label">Insurance Plan Type:</label>
+                                <div class="form-group col-md-5" style="margin-top:20px ">
+                                    <input type="text" class="form-control" id="InsurancePlanType" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="InsuranceClassType" class="col-md-6 control-label">Insurance Class Type:</label>
+                                <div class="form-group col-md-5">
+                                    <input type="text" class="form-control" id="Fax" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-md-5">
+                                    <input type="checkbox" name="Inactive" value="Inactive"> Inactive
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <input type="checkbox" name="RequiresEnrollment" value="RequiresEnrollment"> Requires Enrollment
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="Display_01 col-md-9" id="camp-tab2" style="display:none;">
+
+                    <div class="row">
+                        <div class=" col-md-12">
+                            <div class="row" style="margin-top:35px">
+                                <label for="PayamentCode" class="col-md-3 control-label">Payament Code:</label>
+                                <div class="form-group col-md-6" style="margin-left:30px">
+                                    <input type="text" class="form-control" id="PayamentCode" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="Explanation" class="col-md-3 control-label">Explanation:</label>
+                                <div class="form-group col-md-6" style="margin-left:30px">
+                                    <textarea rows="10" cols="48"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="Display_01 col-md-9" id="camp-tab3" style="display:none;">
+
+                    <div class="row">
+                        <div class="row col-md-12">
+                            <h6 class="control-label text-bg-white"><b>Provider Billing Data For Insurance:</b></h6>
+                        </div>
+
+                        <div class="row col-md-12">
+                            <label for="Provider">Provider:</label>
+                            <div class="form-group col-md-2">
+                                <label for="Provider" style="border-color:coral" class="control-label"></label>
+                            </div>
+                        </div>
+                        @*<div class="row col-md-12">*@
+                        <div class="row col-md-6">
+                            <label for="Insurance">Insurance:</label>
+                            <div class="form-group col-md-2">
+                                <label for="Provider" class="control-label"></label>
+                            </div>
+                        </div>
+                        <div class="row col-md-3" style="border-left: 1px solid grey">
+                            <div class="row col-md-12">
+                                <label for="Tel" class="control-label">Tel:</label>
+                                <div class="form-group">
+                                    <label for="Tel" class="control-label">-</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="PayorID" class="control-label">PayorID:</label>
+                                <div class="form-group">
+                                    <label for="PayorID" class="control-label"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row col-md-3" style="border-left: 1px solid grey">
+                            <div class="row col-md-12">
+                                <label for="Fax" class="control-label">Fax:</label>
+                                <div class="form-group">
+                                    <label for="Fax" class="control-label"></label>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top:0px;">
+                                <label for="MedicapID" class="control-label">MedicapID:</label>
+                                <div class="form-group">
+                                    <label for="MedicapID" class="control-label"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        @*</div>*@
+
+                    </div>
+                    <div class="row">
+                        <div class=" row col-md-12" style="border-top:1px solid grey">
+                        </div>
+                    </div>
+
+                    <div class="row col-md-2">
+                        <input type="button" id="CopyTaxIDbtn" style="margin-left:250px;margin-top:5px" value="Copy Tax ID" />
+                    </div>
+                    <div class="row">
+                        <div class="row col-md-6">
+                            <div class="row" style="margin-top:5px">
+                                <label for="Provider" class="control-label">Provider:</label>
+                                <div class="form-group">
+                                    <input type="text" style="margin-left:45px" class="form-control" id="Provider" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="Group" class="control-label">Group:</label>
+                                <div class="form-group">
+                                    <input type="text" style="margin-left:55px" class="form-control" id="Group" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="EffectiveDate" class="control-label">Effective Date:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="EffectiveDate" />
+                                </div>
+                            </div>
+
+                            <div class="row col-md-12">
+                                <label for="TaxID" style="color:coral">Tax Ids & billing Address</label>
+                            </div>
+
+                            <div class="row" style="border-bottom:1px solid grey">
+                                <label for="TaxIds" class="col-md-3 control-label">TaxIds:</label><br />
+                                <div class="form-group col-md-9">
+                                    <input type="checkbox" name="RequiresEnrollment" value="RequiresEnrollment"> Use Provider's Defaults
+                                </div>
+
+                            </div>
+
+
+                            @*<div class="col-md-10" style="border-bottom:1px solid grey">
+
+                                </div>*@
+                        </div>
+
+
+                        <div class="row col-md-6" style="border-left:1px solid grey">
+
+                            <div class="form-group">
+                                <input type="checkbox" name="RequiresEnrollment" value="RequiresEnrollment"> Use HCFS Defaults
+                            </div>
+
+                            <div class="row">
+                                <label for="Provider" style="margin-left:3px" class="control-label">HCFA 24j:</label>
+                                <div class="form-group" style="margin-left:55px">
+                                    <input type="text" class="form-control" id="Provider" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="Provider" style="margin-left:3px" class="control-label">HCFA 33 Pin #:</label>
+                                <div class="form-group" style="margin-left:20px">
+                                    <input type="text" class="form-control" id="Provider" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="Provider" style="margin-left:3px" class="control-label">HCFA 33 GRP #:</label>
+                                <div class="form-group" style="margin-left:10px">
+                                    <input type="text" class="form-control" id="Provider" />
+                                </div>
+                            </div>
+
+
+                            @*<div class="row" style="border-top:1px solid grey">
+                                    <div class="row col-md-6"></div>
+                                </div>*@
+
+
+                            <div class="row" style="border-top:1px solid grey">
+                                <div class="form-group" style="margin-left:8px">
+                                    <input type="checkbox" name="RequiresEnrollment" value="RequiresEnrollment"> Use Electronic Claim Defults
+                                </div>
+
+                                <div class="row">
+                                    <label for="Provider" style="margin-left:18px" class="control-label">EMC Provider ID(BAO-2):</label>
+                                    <div class="form-group" style="margin-left:10px">
+                                        <input type="text" class="form-control" id="Provider" />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label for="Provider" style="margin-left:18px" class="control-label">Commercial #(BAP-15):</label>
+                                    <div class="form-group" style="margin-left:25px">
+                                        <input type="text" class="form-control" id="Provider" />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label for="Provider" style="margin-left:18px" class="control-label">Provider Number(CAO-28):</label>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="Provider" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        @*</div>*@
+
+
+                    </div>
+                </div>
+
+
+                <div class="Display_01 col-md-9" id="camp-tab4" style="display:none;">
+
+                    <div class="row">
+                        <div class=" col-md-12">
+                            <div class="form-group" style="margin-top:35px">
+                                <input type="checkbox" name="RequiresEnrollment" value="RequiresEnrollment"> <b>Managed Care/Capitation Plan</b>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-10" style="border-bottom:1px solid grey">
+                            <div class="row" style="margin-top:10px">
+                                <label for="Provider" class="control-label">Capitation Write Of Code:</label>
+                                <div class="form-group" style="margin-left:30px">
+                                    <select class="form-control" id="CapitationWriteofCode" name="CapitationWriteofCode">
+                                        <option>...</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="Paymentpepatient" class="control-label">Payment per pateint $:</label>
+                                <div class="form-group" style="margin-left:53px">
+                                    <input type="text" class="form-control" id="Paymentpepatient" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-10" style="border-bottom:1px solid grey">
+                            <div class="form-group" style="margin-top:10px">
+                                <input type="checkbox" name="RequiresEnrollment" value="RequiresEnrollment">Do not transfer fully capitated claims to patient after the capitation adjustment is posted
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="Display_01 col-md-9" id="camp-tab5" style="display:none;">
+                    <div class="row col-md-7">
+                        <div class="p-3 mb-2 bg-white text-dark">
+                            <div class="row">
+                                <h5 class="text-primary">Claim Office</h5>
+                            </div>
+                            <div class="row">
+                                <label for="Number" class="control-label">Number:</label>
+                                <div class="form-group" style="margin-left:10px">
+                                    <input type="text" class="form-control" id="Number" />
+                                </div>
+                            </div>
+                            <div class="row" style="border-bottom:1px solid grey">
+                                <label for="IDType" class="control-label">IDType:</label>
+                                <div class="form-group col-md-2">
+                                    <input type="text" class="form-control" id="IDType" />
+                                </div>
+                            </div>
+
+                            <div class="row" style="border-bottom:1px solid grey">
+                                <div class="row">
+                                    <input type="checkbox" name="RequiresRefferal" value="RequiresRefferal">Requires Refferal
+                                </div>
+                                <div class="row">
+                                    <input type="checkbox" name="RequiresRefferal" value="RequiresRefferal">ANSI Payer-5010 Format
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <h6 class="text-primary">Insurance Assignment(HCFA Box 27)</h6>
+                            </div>
+                            <div class="row">
+                                <label for="AcceptAssignMent" class="control-label">Accept Assignment:</label>
+                                <form class="form-inline" style="margin-right:5px">
+                                    <select class="form-control" id="AcceptAssignMent" name="AcceptAssignMent">
+                                        <option>.</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                    <input type="button" id="AssignmentOverride" value="AssignmentOverride" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row col-md-5">
+                            <div class="row">
+                                <h6 class="text-primary">HCFA Box 19(Print Only)</h6>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="Display_01 col-md-9" id="camp-tab6" style="display:none;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <label for="Name" class="col-md-4 control-label">Name:</label>
+                                <div class="form-group col-md-8">
+                                    <input type="text" class="form-control" id="Name" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="Type" class="col-md-4 control-label">Type:</label>
+                                <div class="form-group col-md-4">
+                                    <div class="btn-group" style="margin-left:35px">
+                                        <button type="button" class="btn btn-success">Success</button>
+                                        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item">Data 1</a>
+                                            <a class="dropdown-item">Data 2</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <label for="ResourceColor" class="col-md-4 control-label">Resource Color:</label>
+                                <div class="form-group col-md-2">
+                                    <input type="text" class="form-control" id="Name" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="Code" class="col-md-4 control-label">Code:</label>
+                                <div class="form-group col-md-4" style="margin-left:35px">
+                                    <input type="text" class="form-control" id="Code" />
+                                </div>
+                                <input type="checkbox" name="PrimaryPractice" value="PrimaryPractice">Primary Practice
+                            </div>
+
+                            <div class="row">
+
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#StreetAddress">Street Address</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#BillingAddress">Billing Address</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#FacilityIDs">FacilityIDs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#FacilityDefaults">Facility Defaults</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="row col-md-12">
+                                <div class="tab-content">
+
+                                    <div id="StreetAddress" class="container tab-pane active">
+                                        <div class="row col-md-12">
+                                            <div class="row">
+                                                <label for="AddressLine1" class="col-md-4 control-label">Address Line 1:</label>
+                                                <div class="form-group col-md-8">
+                                                    <input type="text" class="form-control" id="AddressLine1" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="AddressLine2" class="col-md-4 control-label">Address Line 2:</label>
+                                                <div class="form-group col-md-8">
+                                                    <input type="text" class="form-control" id="AddressLine2" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="City" class="col-md-4 control-label">City:</label>
+                                                <div class="form-group col-md-8" style="margin-left:35px">
+                                                    <input type="text" class="form-control" id="City" />
+                                                </div>
+                                                <input type="button" id="Validatebtn" value="Validate" />
+                                            </div>
+
+                                            <div class="row">
+                                                <form class="form-inline">
+                                                    <label for="State" class="control-label">State</label>
+                                                    <input type="text" class="form-control" id="State" />
+                                                    <select class="form-control" style="margin-right:30px" id="State" name="State">
+                                                        <option>Andhra</option>
+                                                        <option>Telegana</option>
+                                                        <option>Karnatka</option>
+                                                    </select>
+
+                                                    <label for="Zip" class="control-label">Zip</label>
+                                                    <div class="form-group col-md-3" style="margin-left:20px">
+                                                        <input type="text" class="form-control" id="Zip" />
+                                                    </div>
+
+                                                    <label for="Country" class="control-label">Country</label>
+                                                    <select class="form-control" style="margin-right:10px" id="Country" name="Country">
+                                                        <option>India</option>
+                                                    </select>
+                                                </form>
+                                            </div>
+
+                                            <div class="row">
+                                                <form class="form-inline">
+                                                    <label for="Telephone" class="control-label">Telephone</label>
+                                                    <div class="form-group col-md-5">
+                                                        <input type="text" class="form-control" id="Telephone" />
+                                                    </div>
+
+                                                    <label for="Fax" class="control-label">Fax</label>
+                                                    <div class="form-group col-md-5" style="margin-left:20px">
+                                                        <input type="text" class="form-control" id="Fax" />
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="Email" class="control-label">Email</label>
+                                                <div class="form-group col-md-5" style="margin-left:20px">
+                                                    <input type="text" class="form-control" id="Email" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="Notes" class="control-label">Email</label>
+                                                <select name="Notes" class="custom-select mb-3">
+                                                    <option value="volvo">1</option>
+                                                    <option value="fiat">2</option>
+                                                    <option value="audi">3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="StartDate" class="control-label">StartDate</label>
+                                                <div class="form-group col-md-4" style="margin-left:10px">
+                                                    <input id="datepicker" width="276" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <input type="checkbox" name="StreetAddress" value="PrimaryPractice">Service Location Qualifies for Health Professional Shortage Area(HSPA)Incentive
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="HPSAModifier" class="control-label">HPSA Modifier</label>
+                                                <div class="form-group col-md-4" style="margin-left:10px">
+                                                    <input type="text" class="form-control" id="HPSAModifier" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <input type="checkbox" name="ExcludeCharges" value="PrimaryPractice">Exclude Charges from Patient/Gurantor Statements
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="BillingAddress" class="container tab-pane fade">
+                                        <div class="row col-md-12">
+                                            <div class="row">
+                                                <label for="AddressLine1" class="col-md-4 control-label">Address Line 1:</label>
+                                                <div class="form-group col-md-8">
+                                                    <input type="text" class="form-control" id="AddressLine1" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="AddressLine2" class="col-md-4 control-label">Address Line 2:</label>
+                                                <div class="form-group col-md-8">
+                                                    <input type="text" class="form-control" id="AddressLine2" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="City" class="col-md-4 control-label">City:</label>
+                                                <div class="form-group col-md-8" style="margin-left:35px">
+                                                    <input type="text" class="form-control" id="City" />
+                                                </div>
+                                                <input type="button" id="Validatebtn" value="Validate" />
+                                            </div>
+
+                                            <div class="row">
+                                                <form class="form-inline">
+                                                    <label for="State" class="control-label">State</label>
+                                                    <input type="text" class="form-control" id="State" />
+                                                    <select class="form-control" style="margin-right:30px" id="State" name="State">
+                                                        <option>Andhra</option>
+                                                        <option>Telegana</option>
+                                                        <option>Karnatka</option>
+                                                    </select>
+
+                                                    <label for="Zip" class="control-label">Zip</label>
+                                                    <div class="form-group col-md-3" style="margin-left:20px">
+                                                        <input type="text" class="form-control" id="Zip" />
+                                                    </div>
+
+                                                    <label for="Country" class="control-label">Country</label>
+                                                    <select class="form-control" style="margin-right:10px" id="Country" name="Country">
+                                                        <option>India</option>
+                                                    </select>
+                                                </form>
+                                            </div>
+
+                                            <div class="row">
+                                                <form class="form-inline">
+                                                    <label for="Telephone" class="control-label">Telephone</label>
+                                                    <div class="form-group col-md-5">
+                                                        <input type="text" class="form-control" id="Telephone" />
+                                                    </div>
+
+                                                    <label for="Fax" class="control-label">Fax</label>
+                                                    <div class="form-group col-md-5" style="margin-left:20px">
+                                                        <input type="text" class="form-control" id="Fax" />
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="Email" class="control-label">Email</label>
+                                                <div class="form-group col-md-5" style="margin-left:20px">
+                                                    <input type="text" class="form-control" id="Email" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="Notes" class="control-label">Email</label>
+                                                <select name="Notes" class="custom-select mb-3">
+                                                    <option value="volvo">1</option>
+                                                    <option value="fiat">2</option>
+                                                    <option value="audi">3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="PracticeType" class="control-label">Practice Type</label>
+                                                <select name="Notes" class="custom-select mb-3">
+                                                    <option value="volvo">1</option>
+                                                    <option value="fiat">2</option>
+                                                    <option value="audi">3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="form-group col-md-5" style="margin-left:25px">
+                                                    <fieldset id="group1">
+                                                        <input type="radio" value="Medical" name="Medical">Medical<br />
+                                                        <input type="radio" value="Chiropractic" name="Chiropractic">Chiropractic<br />
+                                                        <input type="radio" value="other" name="other">other<br />
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="FedralTaxID" class="control-label">Fedral Tax ID</label>
+                                                <div class="form-group col-md-5">
+                                                    <input type="text" class="form-control" id="FedralTaxID" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="CheckPayableTo" class="control-label">Check Payable To</label>
+                                                <div class="form-group col-md-5">
+                                                    <input type="text" class="form-control" id="CheckPayableTo" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="BankAccount" class="control-label">Bank Account</label>
+                                                <div class="form-group col-md-5">
+                                                    <input type="text" class="form-control" id="BankAccount" />
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div id="FacilityIDs" class="container tab-pane fade">
+                                        <div class="row col-md-12">
+                                            <div class="row">
+                                                <form class="form-inline">
+                                                    <label for="CLIAIDNumber" class="col-md-4 control-label">CLIA ID Number</label>
+                                                    <div class="form-group col-md-4">
+                                                        <input type="text" class="form-control" id="CLIAIDNumber" />
+                                                    </div>
+
+                                                    <label for="RevenueCode" class="col-md-4 control-label">Revenue Code</label>
+                                                    <div class="form-group col-md-4">
+                                                        <input type="text" class="form-control" id="RevenueCode" />
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="TaxonomyCode" class="col-md-4 control-label">Taxonomy Code</label>
+                                                <select name="TaxonomyCode" class="custom-select mb-3">
+                                                    <option value="1001">1</option>
+                                                    <option value="1002">2</option>
+                                                    <option value="1003">3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="FacilityType" class="col-md-4 control-label">Facility Type</label>
+                                                <select name="FacilityType" class="custom-select mb-3">
+                                                    <option value="1001">1</option>
+                                                    <option value="1002">2</option>
+                                                    <option value="1003">3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="InsurancePlanType" class="col-md-4 control-label">Insurance Plan Type</label>
+                                                <select name="InsurancePlanType" class="custom-select m-md-8">
+                                                    <option value="1001">1</option>
+                                                    <option value="1002">2</option>
+                                                    <option value="1003">3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="row">
+                                                <form class="form-inline">
+                                                    <label for="MammographyCertificationnumber" class="col-md-4 control-label">Mammography Certification number</label>
+                                                    <div class="form-group col-md-4">
+                                                        <input type="text" class="form-control" id="MammographyCertificationnumber" />
+                                                    </div>
+
+                                                    <label for="NPI" class="col-md-2 control-label">NPI</label>
+                                                    <div class="form-group col-md-4">
+                                                        <input type="text" class="form-control" id="NPI" />
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="InsurancePlanType" class="col-md-4 control-label">Place of Service Code(POS)</label>
+                                                <select name="InsurancePlanType" class="custom-select m-md-8">
+                                                    <option value="1001">1</option>
+                                                    <option value="1002">2</option>
+                                                    <option value="1003">3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="row">
+                                                <label for="InsurancePlanType" class="col-md-4 control-label">Fee Schedule</label>
+                                                <select name="InsurancePlanType" class="custom-select m-md-8">
+                                                    <option value="1001">1</option>
+                                                    <option value="1002">2</option>
+                                                    <option value="1003">3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="row">
+                                                <h6>Facility/Lab ID Numbers(PayerSpecific)</h6>
+                                                <div class="form-group col-md-2" style="margin-left:20px">
+                                                    <input type="button" value="Add" />
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div id="FacilityDefaults" class="container tab-pane fade">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <h6><b>Default Assistant</b></h6>
+                                            </div>
+                                            <div class="row">
+                                                <label for="InsurancePlanType" class="col-md-4 control-label">Fee Schedule</label>
+                                            </div>
+                                            <div class="row">
+                                                <label for="DIAssistant" class="col-md-4 control-label">DI Assistant</label>
+                                            </div>
+                                            <div class="row">
+                                                <label for="ProcedureAssistant" class="col-md-4 control-label">Procedure Assistant</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="Display_01 col-md-9" id="camp-tab7" style="display:none;">
+                    <div class="row">
+                        <div class="row col-md-12">
+                            <div class="row">
+                                <label for="UBBillType" class="control-label">UBBillType</label>
+                                <div class="form-group col-md-2">
+                                    <input type="text" class="form-control" id="UBBillType" />
+                                </div>
+                                <input type="button" style="margin-left:35px" value="Import" id="Import" />
+                                <input type="button" style="margin-left:45px" value="Add" id="Add" />
+                                <input type="button" style="margin-left:55px" value="Update" id="Update" />
+                                <input type="button" style="margin-left:65px" value="Delete" id="Delete" />
+                            </div>
+
+                            <div class="row" style="border-bottom:1px solid grey;margin-top:20px">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="Display_01 col-md-9" id="camp-tab8" style="display:none;">
+
+                    <div class="row">
+                        <form class="form-inline">
+            <div class="form-group col-md-5">
+                <input type="checkbox" name="Inactive" value="Inactive"> Slide Patient Copy
+            </div>
+            <div class="form-group col-md-5">
+                <input type="checkbox" name="RequiresEnrollment" value="RequiresEnrollment"> Slide on Patients Balances
+            </div>
+        </form>
+
+                        <input type="checkbox" name="Inactive" value="Inactive"> Slide Patient Copy
+                        <input type="checkbox" name="RequiresEnrollment" value="RequiresEnrollment"> Slide on Patients Balances
+                    </div>
+
+                    <div class="row">
+                        <form class="form-inline">
+                            <div class="form-group col-md-5">
+                                <input type="checkbox" name="Inactive" value="Inactive"> Slide Claim Balance
+                            </div>
+                            <div class="form-group col-md-5">
+                                <input type="checkbox" name="RequiresEnrollment" value="RequiresEnrollment"> Split claim
+                            </div>
+
+                            <div class="row">
+                                <label for="Name" class="control-label">Select Insurance:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Name" />
+                                </div>
+
+
+                                <div class="form-group col-md-5" style="margin-left:25px">
+                                    <label for="Name" class="control-label">Insurance Type:</label>
+                                    <fieldset id="group1">
+                                        <input type="radio" value="Electronic" name="Electronic">Professional<br />
+                                        <input type="radio" value="Professional" name="Professional">Technical<br />
+                                    </fieldset>
+                                </div>
+                                <input type="button" name="import" value="import" />
+
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <div class="Display_01 col-md-9" id="camp-tab9" style="display:none;">
+
+
+
+                </div>
+
+
+                <div class="Display_01 col-md-9" id="camp-tab10" style="display:none;">
+
+                    <div class="row">
+                        <div class="row col-md-12">
+                            <div class="row">
+                                <label for="Name" class="control-label">Name:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Name" />
+                                </div>
+                            
+                                <label for="Address1" class="control-label">Address1:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Address1" />
+                                </div>
+                            </div>
+
+                            <div class="row col-md-12">
+                                <label for="Address2" class="control-label">Address2:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Address2" />
+                                </div>
+                           
+                                <label for="City" class="control-label">City:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="City" />
+                                </div>
+                            </div>
+
+                            <div class="row col-md-12">
+                                <label for="State" class="control-label">State:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="State" />
+                                </div>
+                           
+                                <label for="Country" class="control-label">Country:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Country" />
+                                </div>
+                            </div>
+
+                            <div class="row col-md-12">
+                                <label for="Zip" class="control-label">Zip:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Zip" />
+                                </div>
+                          
+                                <label for="Tel" class="control-label">Tel:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Tel" />
+                                </div>
+                            </div>
+
+                            <div class="row col-md-12">
+                                <label for="AltTel" class="control-label">Alt Tel:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="ALtTel" />
+                                </div>
+                           
+                                <label for="Fax" class="control-label">Fax:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Fax" />
+                                </div>
+                            </div>
+
+                            <div class="row col-md-12">
+                                <label for="E-mail" class="control-label">E-mail:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="E-mail" />
+                                </div>
+                           
+                                <label for="Website" class="control-label">Website:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Website" />
+                                </div>
+                            </div>
+
+                            <div class="row col-md-12">
+                                <label for="Contact" class="control-label">Contact:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Contact" />
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </section>
+    </div>
+
+<script>
+    $(document).ready(function () {
+
+
+        function hideTabs() {
+            $("#camp-tab1").hide();
+            $("#camp-tab2").hide();
+            $("#camp-tab3").hide();
+            $("#camp-tab4").hide();
+            $("#camp-tab5").hide();
+            $("#camp-tab6").hide();
+            $("#camp-tab7").hide();
+            $("#camp-tab8").hide();
+            $("#camp-tab9").hide();
+            $("#camp-tab10").hide();
+        }
+
+        $(".list-group-item").click(function () {
+
+            if ($(this).text() == "Address") {
+                hideTabs();
+                $("#camp-tab1").show();
+            }
+            if ($(this).text() == "PaymentCodes/Alert") {
+                hideTabs();
+                $("#camp-tab2").show();
+            }
+            if ($(this).text() == "Provider Numbers") {
+                hideTabs();
+                $("#camp-tab3").show();
+            }
+            if ($(this).text() == "Capitation") {
+                hideTabs();
+                $("#camp-tab4").show();
+            }
+            if ($(this).text() == "EDI-ANSI") {
+                hideTabs();
+                $("#camp-tab5").show();
+            }
+            if ($(this).text() == "Notes") {
+                hideTabs();
+                $("#camp-tab6").show();
+            }
+            if ($(this).text() == "UB Setup") {
+                hideTabs();
+                $("#camp-tab7").show();
+            }
+            if ($(this).text() == "FQHC Setup") {
+                hideTabs();
+                $("#camp-tab8").show();
+            }
+            if ($(this).text() == "EDI-ANSI2") {
+                hideTabs();
+                $("#camp-tab9").show();
+            }
+            if ($(this).text() == "Refunds") {
+                hideTabs();
+                $("#camp-tab10").show();
+            }
+        });
+
+        $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+
+
+    })
+</script>
+

@@ -1,0 +1,216 @@
+﻿@model Calpion.Artemis.Models.ViewModels.LandingPage
+@{
+    ViewData["Title"] = "LandingPage";
+}
+
+<h2>LandingPage</h2>
+
+<style>
+    .ui-menu {
+        width: 150px;
+    }
+
+    .custoMCLASS {
+        height: 100% !important;
+    }
+
+
+    .container {
+        padding: 20px;
+    }
+
+    .form-control {
+        width: 120px;
+    }
+
+    .popover {
+        max-width: 400px;
+    }
+
+    #popover-content-logout > * {
+        background-color: #ff0000 !important;
+    }
+</style>
+<script>
+    $(function () {
+        $("#menu").menu();
+    });
+
+
+    $("[data-toggle=popover]").each(function (i, obj) {
+
+        $(this).popover({
+            html: true,
+            content: function () {
+                var id = $(this).attr('id')
+                return $('#popover-content-' + id).html();
+            }
+        });
+
+    });
+
+
+
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <div style="margin:auto;width:100%;border-radius:15px;border:1px solid #808080;padding:50px;">
+        <ul id="menu">
+            <li><div>Favorites</div></li>
+            <li>
+                <div>Menu</div>
+                <ul>
+                    <li>
+                        <div>File</div>
+
+                        <ul>
+                            <li>
+                                @*<a href="~/Home/Insurance" class="fa fa-slideshare">Insurance</a>*@
+                                <div>Insurances</div>
+                                <ul>
+                                    <li> <a href="~/Home/InsuranceLookUp" class="fa fa-slideshare">Insurance</a></li>
+                                    <li><div>Insurance Participation By Provider</div></li>
+                                    <li><div>Insurance By Provider Lookup</div></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="~/Home/Pharmacy" class="fa fa-slideshare">Pharmacies</a>
+                                @*<div>Pharmacies</div>*@
+                            </li>
+                            <li>@*<div>Attorneys</div>*@<a href="~/Home/Attorney" class="fa fa-slideshare">Attorney</a></li>
+                            <li>
+                                <a href="~/Home/Employer_LookUp" class="fa fa-slideshare">Employers</a>
+                            </li>
+
+                    </li>
+                    <li>
+                        @*<div>InsuranceGroups</div>*@
+                        <a href="~/Home/InsuranceGroup" class="fa fa-slideshare">InsuranceGroup</a>
+                    </li>
+
+                    <li>
+                        <a href="~/Home/Guarantor" class="fa fa-slideshare">Guarantor</a>
+                    </li>
+                    <li> <a href="~/Home/Facility" class="fa fa-slideshare">Facility</a></li>
+                    <li><a href="~/Home/Provider" class="fa fa-slideshare">Provider</a></li>
+                    <li><div>Data by Facility</div></li>
+                    <li><div>Referring Physicians/Insurances</div></li>
+                    <li><div>Mandatory Fields</div></li>
+                    <li><div>Zip Codes</div></li>
+                </ul>
+            </li>
+            <li>
+                <div>Patient</div>
+                <ul>
+                    <li> <a href="~/Home/NewPatientRegistration" class="fa fa-slideshare">New</a></li>
+                    <li> <a href="~/Home/PatientLookUp" class="fa fa-slideshare">LookUp</a></li>
+                </ul>
+            </li>
+            <li><div>Schedule</div></li>
+            <li><div>Billing</div></li>
+            <li><div>Reports</div></li>
+            <li><div>ePayments</div></li>
+        </ul>
+        </li>
+        <li>
+            <div>Pactice</div>
+        </li>
+        <li><div>Registry</div></li>
+        <li><div>Referals</div></li>
+        <li><div>Messages</div></li>
+        <li><div>Documents</div></li>
+        <li><div>Billing</div></li>
+        <li><div>Analytics</div></li>
+        <li><div>Healow</div></li>
+        <li><div>Admin</div></li>
+       
+        <li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+        </ul>
+
+
+
+
+
+
+        @*<div class="container">
+                <h3>Bootstrap 3 Popover HTML Example</h3>
+                <a data-toggle="popover" data-container="body" data-placement="right" type="button" data-html="true" href="#" id="login"><span class="glyphicon glyphicon-list" style="margin:3px 0 0 0"></span></a>
+
+                <a data-toggle="popover" data-container="body" data-placement="right" type="button" data-html="true" href="#" id="logout"><span class="glyphicon glyphicon-search" style="margin:3px 0 0 0"></span></a>
+
+                <div id="popover-content-logout" class="hide">
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <input class="headerSearch search-query" id="str" name="str" type="text" placeholder="Search..." />
+                            <span class="glyphicon glyphicon-search" style="margin:3px 8px 0 -20px;"></span>
+                            <input class="btn btn-primary btn-xs" id="phSearchButton" type="submit" value="Search" />
+                        </div>
+                    </form>
+                </div>
+
+                <div id="popover-content-login" class="hide">
+                    <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
+
+            </div>*@
+
+
+        @*<div class="container">
+                <div class="row custoMCLASS">
+                    <div class="col-2">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <a class="navbar-brand" href="#">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Dropdown
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Disabled</a>
+                                    </li>
+                                </ul>
+                                <form class="form-inline my-2 my-lg-0">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </nav>            </div>
+                    <div class="col-8">
+                        One of three columns
+                    </div>
+
+                </div>
+            </div>*@
+    </div>
+</body>
+</html>

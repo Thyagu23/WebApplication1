@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewData["Title"] = "PatientLookUp";
+}
+
+<h2>PatientLookUp</h2>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin:auto;width:100%;border-radius:15px;border:1px solid #808080;padding:70px;">
+
+        <button type="button" align="right" data-toggle="modal" data-target="#myModal">New (Copy)</button>
+        <a><input type=button value='New' /></a>
+        <button type="button" align="left" data-toggle="modal" data-target="#myModal">Delete</button>
+
+
+
+        <!-- Modal start-->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    @*<div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>*@
+                    <div class="modal-body">
+                        <p>Please select a Patient and try again !</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr />
+        <div class="row">
+            <div class="form-group col-md-2" style="margin-left:05px">
+                <input type="text" class="form-control" id="Name" placeholder="Search by Name" />
+            </div>
+            <div> <label for="Name" class="col-md-2 control-label">by </label></div>
+
+            @*<div class="form-group col-md-2" style="margin-left:05px">
+                    <input type="text" class="form-control" id="Name" placeholder="Name" />
+                </div>*@
+
+            <select class="form-group col-md-2" id="myList">
+                <option value="1">Name</option>
+                <option value="2">SSN</option>
+                <option value="3">DOB</option>
+                <option value="4">Account No</option>
+                <option value="5">Phone No</option>
+                <option value="6">Subscriber No</option>
+                <option value="7">Previous Name</option>
+                <option value="8">Guarantor No</option>
+            </select>
+
+
+            
+                <select class="form-group col-md-2"  align="right" id="myList" style="margin-left:05px">
+                    <option value="1">All</option>
+                    <option value="2">Active</option>
+                    <option value="3">Inactive</option>
+                    <option value="4">Deceased</option>
+                </select>
+            
+
+
+
+
+        </div>
+
+
+        <table style="width:100%">
+            <tr>
+                <th>PatientName</th>
+                <th>DOB</th>
+                <th>AccountNo</th>
+                <th>Phone no</th>
+                <th>Last Appt</th>
+
+
+            </tr>
+
+        </table>
+
+
+
+        <div class="modal-footer">
+            <input type="button" id="AssignmentOverride" value="Close" />
+            @*<input type="button" id="Assignmide" value="OK" />*@
+        </div>
+
+    </div>
+</body>
+</html>
+
+

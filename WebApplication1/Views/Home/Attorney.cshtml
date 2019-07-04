@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Attorney";
+}
+
+<h2>Attorney</h2>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <div  style="margin:auto;width:100%;border-radius:15px;border:1px solid #808080;padding:50px;">
+        <div class="row">
+
+            <label for="TaxID">Attorney :</label>
+            <div class="form-group col-md-2">
+                <input type="text" class="form-control" id="TaxID" />
+            </div>
+
+            <label for="Type">Name :</label>
+            <div class="form-group col-md-2">
+                <input type="text" class="form-control" id="Type" />
+            </div>
+        </div>
+
+        <div class="row col-md-2" sstyle="padding:50px;">
+            @*<input type="button" href="~/Home/AttorneyPartial" id="attr1" style="margin-left:0px;margin-top:5px" value="NEW" />*@
+            <a href="~/Home/AttorneyNewRegistration"><input type=button value='NEW'></a>
+        </div>
+
+
+
+        <table style="width:100%">
+            <tr>
+             
+                <th>Attorney Name</th>
+                <th>Office</th>
+                <th>Address</th>                
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+                <th>Phone No</th>
+                <th>Fax No</th>
+            </tr>
+            @*
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>raja</td>
+                    <td></td>
+                    <td>sjakghahfjhg</td>
+                    <td>ghsfdjkghjkld</td>
+                    <td>merlin</td>
+                    <td>tx</td>
+                    <td>23132</td>
+                    <td>901-901-9999</td>
+                    <td>888-888-8888</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>raja</td>
+                    <td></td>
+                    <td>sjakghahfjhg</td>
+                    <td>ghsfdjkghjkld</td>
+                    <td>merlin</td>
+                    <td>tx</td>
+                    <td>23132</td>
+                    <td>901-901-9999</td>
+                    <td>888-888-8888</td>
+                </tr>*@
+        </table>
+    </div>
+</body>
+</html>
+

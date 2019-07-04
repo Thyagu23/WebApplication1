@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewData["Title"] = "Menu";
+}
+
+<h2>Phramacy Lookup</h2>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin:auto;width:100%;border-radius:15px;border:1px solid #808080;padding:70px;">
+        <div><h5><u>Local Pharmarcy DataBase</u></h5></div>
+        <div class="row">
+            <label for="TaxID">NAME :</label>
+            <div class="form-group col-md-5">
+                <input type="text" class="form-control" id="TaxID" />
+            </div>
+
+            <label for="Type">CITY :</label>
+            <div class="form-group col-md-5">
+                <input type="text" class="form-control" id="Type" />
+            </div>
+
+            <a href="~/Home/NewPharmacyRegistration"><input type=button value='NEW'></a>
+        </div>
+      
+
+        <table style="width:100%">
+            <tr>
+                <th>E</th>
+                <th>M</th>
+                <th>NCPDPID</th>
+                <th>Name</th>
+                <th>ServiceLevel</th>
+                <th>Add 1</th>
+                <th>Add 2</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+                <th>Phone No</th>
+                <th>Fax No</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>raja</td>
+                <td></td>
+                <td>sjakghahfjhg</td>
+                <td>ghsfdjkghjkld</td>
+                <td>merlin</td>
+                <td>tx</td>
+                <td>23132</td>
+                <td>901-901-9999</td>
+                <td>888-888-8888</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>raja</td>
+                <td></td>
+                <td>sjakghahfjhg</td>
+                <td>ghsfdjkghjkld</td>
+                <td>merlin</td>
+                <td>tx</td>
+                <td>23132</td>
+                <td>901-901-9999</td>
+                <td>888-888-8888</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "Appointment";
+}
+
+<center><h2>Create Appointment</h2></center>
+<div>
+
+</div>
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "Appointmentform" }))
+{
+    <div class="row">
+        <label for="State" class="col-md-1 control-label">Facility:</label>
+        <div class="form-group col-md-5" style="margin-left:35px">
+            <input type="text" class="form-control" id="facility" />
+        </div>
+    </div>
+    <div class="row">
+        <label for="State" class="col-md-1 control-label">Provider:</label>
+        <div class="form-group col-md-5" style="margin-left:35px">
+            <input type="text" class="form-control" id="Provider" />
+        </div>
+    </div>
+    <div class="row">
+        <label for="State" class="col-md-1 control-label">Resource:</label>
+        <div class="form-group col-md-5" style="margin-left:35px">
+            <input type="text" class="form-control" id="Resourse" />
+        </div>
+    </div>
+    <div class="row">
+        <label for="State" class="col-md-1 control-label">Email:</label>
+        <div class="form-group col-md-5" style="margin-left:35px">
+            <input type="text" class="form-control" id="Email" />
+        </div>
+    </div>
+    <div class="row">
+        <label for="State" class="col-md-1 control-label">Reason:</label>
+        <div class="form-group col-md-5" style="margin-left:35px">
+            <input type="text" class="form-control" id="Reason" />
+        </div>
+    </div>
+    <div class="row">
+        <label for="State" class="col-md-1 control-label">Diagnosis:</label>
+        <div class="form-group col-md-5" style="margin-left:35px">
+            <input type="text" class="form-control" id="Diagnosis" />
+        </div>
+    </div>
+    <div class="row">
+        <label for="State" class="col-md-1 control-label">Date:</label>
+        <div class="form-group col-md-5" style="margin-left:35px">
+            <input type="date" class="form-control" id="Email" />
+        </div>
+    </div>
+    <div class="row">
+        <label for="State" class="col-md-1 control-label">Time:</label>
+        <div class="form-group col-md-5" style="margin-left:35px">
+            <input type="time" class="form-control" id="Email" />
+        </div>
+    </div>
+
+    <input type="button" style="margin-left:45px" value="Cancel" id="Cancel" />
+    <input type="button" style="margin-left:55px" value="Submit" id="Submit" />
+}
+
+<script>
+
+</script>

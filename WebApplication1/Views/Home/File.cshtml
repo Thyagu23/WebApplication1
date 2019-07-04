@@ -1,0 +1,160 @@
+﻿
+@{
+    ViewData["Title"] = "File";
+}
+
+<h2>File</h2>
+<div class="form-horizontal" style="margin:auto;width:100%;border-radius:25px;border:1px solid #808080; padding:10px;">
+    @*<h2 style="display:inline; white-space:nowrap;margin-left:3%;font-family:Calibri;">
+            MENU
+        </h2>*@
+
+
+
+
+    <a href="#" class="list-group-item list-group-item-info" style="width: 180px">File</a>
+    <a href="~/Home/Menu" class="list-group-item list-group-item-action " style="width: 180px">Patient</a>
+    <a href="#cap-tab2" class="list-group-item list-group-item-action " style="width: 180px">Schedule</a>
+    <a href="#cap-tab3" class="list-group-item list-group-item-action " style="width: 180px">EMR</a>
+    <a href="#cap-tab4" class="list-group-item list-group-item-action " style="width: 180px">Billing</a>
+    <a href="#cap-tab5" class="list-group-item list-group-item-action " style="width: 180px">Reports</a>
+    <a href="#cap-tab6" class="list-group-item list-group-item-action " style="width: 180px">CCD</a>
+    <a href="#cap-tab7" class="list-group-item list-group-item-action " style="width: 180px">Fax</a>
+    <a href="#cap-tab8" class="list-group-item list-group-item-action " style="width: 180px">Payments</a>
+    <a href="#cap-tab9" class="list-group-item list-group-item-action " style="width: 180px">Tools</a>
+    <a href="#cap-tab10" class="list-group-item list-group-item-action " style="width: 180px">Community</a>
+
+    <div class="Display_01 col-md-9" id="cap-tab1" style="display:none;">
+
+        <div class="row">
+            <div class=" col-md-6">
+                <div class="row">
+                    <a href="#cap-tab2" class="list-group-item list-group-item-action " style="width: 180px">raj</a>
+                    <a href="#cap-tab3" class="list-group-item list-group-item-action " style="width: 180px">raj</a>
+                </div>               
+            </div>
+
+            <div class="col-md-6" style="border-left: 1px solid grey">
+                <div class="row">
+                    <label for="PayerID" class="col-md-5 control-label">Payer ID:</label>
+                    <div class="form-group col-md-5" style="margin-left:35px">
+                        <input type="text" class="form-control" id="PayerID" />
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="MedigapID" class="col-md-5 control-label">Medigap ID:</label>
+                    <div class="form-group col-md-5" style="margin-left:35px">
+                        <input type="text" class="form-control" id="MedigapID" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="ERAPayerID" class="col-md-5 control-label">ERA Payer ID:</label>
+                    <div class="form-group col-md-5" style="margin-left:35px">
+                        <input type="text" class="form-control" id="ERAPayerID" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="ManagedCarePlanID" class="col-md-6 control-label">Managed Care Plan ID:</label>
+                    <div class="form-group col-md-5">
+                        <input type="text" class="form-control" id="ManagedCarePlanID" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="EligibilityPayerID" class="col-md-5 control-label">Eligibility Payer ID:</label>
+                    <div class="form-group col-md-5" style="margin-left:35px">
+                        <input type="text" class="form-control" id="EligibilityPayerID" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="LiabilityCarrierCode" class="col-md-6 control-label">Liability Carrier Code:</label>
+                    <div class="form-group col-md-5">
+                        <input type="text" class="form-control" id="LiabilityCarrierCode" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="FeeSchdule" class="col-md-5 control-label">Fee Schdule:</label>
+                    <div class="form-group col-md-5" style="margin-left:35px">
+                        <select class="form-control" id="FeeSchdule" name="FeeSchdule">
+                            <option>Fee Schdule</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row" style="border-top: 1px solid grey">
+                    <label for="ClaimSubmission" class="col-md-5 control-label">Claim Submission:</label>
+                    <div class="row">
+                        <div class="form-group col-md-5" style="margin-left:25px">
+                            <fieldset id="group1">
+                                <input type="radio" value="Electronic" name="Electronic">Electronic<br />
+                                <input type="radio" value="Professional" name="Professional">Professional<br />
+                                <input type="radio" value="Paper" name="Paper">Paper<br />
+                            </fieldset>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-4" style="margin-left:20px">
+                                <fieldset id="group2">
+                                    <input type="radio" value="Institutional" name="Institutional">Institutional<br />
+                                    <input type="radio" value="Dental" name="Dental">Dental<br />
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="border-top: 1px solid grey">
+                    <label for="InsurancePlanType" style="margin-top:20px" class="col-md-6 control-label">Insurance Plan Type:</label>
+                    <div class="form-group col-md-5" style="margin-top:20px ">
+                        <input type="text" class="form-control" id="InsurancePlanType" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="InsuranceClassType" class="col-md-6 control-label">Insurance Class Type:</label>
+                    <div class="form-group col-md-5">
+                        <input type="text" class="form-control" id="Fax" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-5">
+                        <input type="checkbox" name="Inactive" value="Inactive"> Inactive
+                    </div>
+                    <div class="form-group col-md-5">
+                        <input type="checkbox" name="RequiresEnrollment" value="RequiresEnrollment"> Requires Enrollment
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    @*<ul class="list-group list-group-horizontal">
+            <li class="list-group-item" style="width:200px;"><b href="https://www.w3schools.com/html/">Insurance</b></li>
+            <li class="list-group-item" style="width:150px;"><b>DummyData</b></li>
+            <li class="list-group-item" style="width:200px;"><b>Assign Pending</b></li>
+            <li class="list-group-item" style="width:150px;"><b>Pending</b></li>
+            <li class="list-group-item" style="width:150px;"><b>InProcess</b></li>
+            <li class="list-group-item" style="width:150px;"><b>Completed</b></li>
+            <li class="list-group-item" style="width:170px;"><b>Clarification</b></li>
+            <li class="list-group-item" style="width:150px;"><b>Duplicate</b></li>
+        </ul>*@
+
+</div>
+
+@*<div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - A Calpion Product</p>
+        </footer>
+    </div>*@
+
+

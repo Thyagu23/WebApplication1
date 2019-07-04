@@ -1,0 +1,304 @@
+﻿ @{
+    ViewData["Title"] = "NewFacilityRegistration";
+}
+
+<h2>NewFacilityRegistration</h2>
+
+
+@*<div style="margin:auto;width:100%;border-radius:15px;border:1px solid #808080;padding:70px;">
+    @*<div>
+        <div class="row">
+
+            <label for="Name" class="col-md-1 control-label">Name:</label>
+            <div class="form-group col-md-2" style="margin-left:05px">
+                <input type="text" class="form-control" id="Name" />
+            </div>
+
+            <label for="Name" class="col-md-1 control-label">Type:</label>
+            <div class="form-group col-md-2" style="margin-left:05px">
+                <input type="text" class="form-control" id="Name" />
+            </div>
+
+
+
+
+
+
+            <label for="Name" class="col-md-1 control-label">Code:</label>
+            <div class="form-group col-md-2" style="margin-left:05px">
+                <input type="text" class="form-control" id="Name" />
+            </div>
+        </div>
+
+        <div class="row">
+            <label for="Name" class="col-md-1 control-label">Start Date:</label>
+            <div class="form-group col-md-2" style="margin-left:05px">
+                <input type="date" class="form-control" id="Name" />
+            </div>
+            <div class="form-group col-md-3" style="margin-left:35px">
+                <input type="checkbox" name="vehicle1" value="Bike">  Active<br>
+            </div>
+        </div>
+    </div>*@
+
+
+<div style="margin:auto;width:100%;border-radius:15px;border:1px solid #808080;padding:70px;">
+
+    <div class="row">
+        <label for="Name" class="col-md-1 control-label">Code:</label>
+        <div class="form-group col-md-2" style="margin-left:05px">
+            <input type="text" class="form-control" id="Name" />
+        </div>
+
+        <label for="Name" class="col-md-1 control-label">Start Date:</label>
+        <div class="form-group col-md-3" style="margin-left:0px">
+            <input type="date" class="form-control" id="Name" />
+        </div>
+        <div class="form-group col-md-2" style="margin-left:05px">
+            <input type="checkbox" name="vehicle1" value="Bike">  Active<br>
+        </div>
+        <div class="form-group col-md-2" style="margin-left:05px">
+            <input type="checkbox" name="vehicle1" value="Bike"> Primary Practice<br>
+        </div>
+    </div>
+    <div class="row">
+        <label for="Name" class="col-md-1 control-label">Name:</label>
+        <div class="form-group col-md-5" style="margin-left:05px">
+            <input type="text" class="form-control" id="Name" />
+        </div>
+    </div>
+    <div class="row">
+        <label for="Name" class="col-md-1 control-label">Type:</label>
+        <div class="form-group col-md-3" style="margin-left:05px">
+            <input type="text" class="form-control" id="Name" />
+        </div>
+
+        <label for="Name" class="col-md-2 control-label">Facility Type:</label>
+        <div class="form-group col-md-3" style="margin-left:05px">
+            <input type="text" class="form-control" id="Name" />
+        </div>
+    </div>
+   
+   
+
+    <div class="container">
+        <section style="background-color:whitesmoke">
+            @*<div class="First_Tab">
+            *@
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+
+                        <a href="#gua-tab1" class="list-group-item" style="width: 180px">Facility Address</a>
+                        <a href="#gua-tab2" class="list-group-item" style="width: 180px">Facility ID's</a>
+
+                    </div>
+                </div>
+                <div class="Display_01 col-md-9" id="gua-tab1" style="display:none;">
+                    <h4><u>Facility Address</u></h4>
+                    <div class="row">
+                        <label for="Name" class="col-md-2 control-label">Address 1:</label>
+                        <div class="form-group col-md-9" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Name" class="col-md-2 control-label">Address 2:</label>
+                        <div class="form-group col-md-9" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Name" class="col-md-2 control-label">City:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+
+                        <label for="Address1" class="col-md-2 control-label">State:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Address1" class="col-md-2 control-label">Zip:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+                    </div>
+                    <h4><u>Pay to Address(if different then Facility Address)</u></h4>
+                    <div class="row">
+                        <label for="Name" class="col-md-2 control-label">Address 1:</label>
+                        <div class="form-group col-md-9" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Name" class="col-md-2 control-label">Address 2:</label>
+                        <div class="form-group col-md-9" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="Name" class="col-md-2 control-label">City:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+
+                        <label for="Address1" class="col-md-2 control-label">State:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Address1" class="col-md-2 control-label">Zip:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+
+                    </div>
+
+
+
+                    <hr />
+                    <div class="row">
+                        <label for="Address1" class="col-md-2 control-label">Federal TaxID:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+
+                        <label for="Address1" class="col-md-2 control-label">Check Payableto:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Address1" class="col-md-2 control-label">Practice Type:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+
+                        <label for="Address1" class="col-md-2 control-label">Fee Schedule:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <label for="Name" class="col-md-2 control-label">Place of Service(POS):</label>
+                        <div class="form-group col-md-9" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Name" class="col-md-2 control-label">Insurance PlanTypes:</label>
+                        <div class="form-group col-md-9" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+                    </div>
+
+                    <hr />
+
+
+
+
+
+
+                    <div class="modal-footer">
+
+                        <input type="button" id="AssignmentOverride" value="Cancel" />
+                        <input type="button" id="Assignmide" value="OK" />
+                    </div>
+                </div>
+
+
+                <div class="Display_01 col-md-9" id="gua-tab2" style="display:none;">
+
+                    <div class="row">
+
+                        <label for="Name" class="col-md-2 control-label">CLIA ID Number:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+
+                        <label for="Name" class="col-md-2 control-label">Revenue Code:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="Name" class="col-md-2 control-label">Taxanomy Code:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+
+                        <label for="Address1" class="col-md-2 control-label">Mammonomy Certification Number:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Address1" class="col-md-2 control-label">NPI:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+                    </div>
+                    <hr />
+                    <h6>Facility ID Numbers(Payer Specific)</h6>
+                    <hr />
+                    <table style="width:100%">
+                        <tr>
+                            <th>Payer ID</th>
+                            <th>Payer Name</th>
+                            <th>Facility ID</th>
+                            <th>ID Type</th>
+
+                        </tr>
+                    </table>
+                    <div class="modal-footer">
+
+                        <input type="button" id="AssignmentOverride" value="Cancel" />
+                        <input type="button" id="Assignmide" value="OK" />
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+
+
+        function hideTabs() {
+            $("#gua-tab1").hide();
+            $("#gua-tab2").hide();
+            $("#gua-tab3").hide();
+
+        }
+
+        $(".list-group-item").click(function () {
+
+            if ($(this).text() == "Facility Address") {
+                hideTabs();
+                $("#gua-tab1").show();
+            }
+            if ($(this).text() == "Facility ID's") {
+                hideTabs();
+                $("#gua-tab2").show();
+            }
+            if ($(this).text() == "Employment") {
+                hideTabs();
+                $("#gua-tab3").show();
+            }
+
+        });
+    })
+</script>

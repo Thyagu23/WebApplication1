@@ -1,0 +1,135 @@
+﻿
+@{
+    ViewData["Title"] = "Facility";
+}
+
+<h2>Facility</h2>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin:auto;width:100%;border-radius:15px;border:1px solid #808080;padding:50px;">
+        <div class="row">
+            <div> <label for="Name" class="col-md-2 control-label">LookUp Facility </label></div>
+            <div class="form-group col-md-2" style="margin-left:05px">
+                <input type="text" class="form-control" id="LookUp Facility" />
+            </div>
+
+            <div><label for="Name" class="col-md-2 control-label">by</label></div>
+            <div class="form-group col-md-2" style="margin-left:05px">
+                <input type="text" class="form-control" id="Name" placeholder="Name" />
+            </div>
+
+            <div><label for="Name" class="col-md-2 control-label">Type</label></div>
+            <div class="form-group col-md-2" style="margin-left:05px">
+                <input type="text" class="form-control" id="Name" placeholder="All Facility" />
+            </div>
+
+        </div>
+
+        <a href="~/Home/NewFacilityRegistration"><input type=button value='NEW' /></a>
+        <button type="button" data-toggle="modal" data-target="#Logs">Logs</button>
+        <hr />
+
+        <label for="Name" class="col-md-1 control-label">Facility Type:</label>
+        <div class="form-group col-md-5" style="margin-left:05px">
+            <input type="text" class="form-control" id="Name" />
+        </div>  <label for="Name" class="col-md-1 control-label">Facility Type:</label>
+        <div class="form-group col-md-5" style="margin-left:05px">
+            <input type="text" class="form-control" id="Name" />
+        </div>
+
+        <br />
+        <div class="modal-footer">
+
+            <input type="button" id="AssignmentOverride" value="Cancel" />
+
+        </div>
+
+        <!-- Modal start-->
+        <div class="modal fade" id="Logs" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Facility Date Update</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div> <label for="Name" class="col-md-2 control-label" placeholder="Select Facility">Select Facility </label></div>
+                            <div class="form-group col-md-2" style="margin-left:05px">
+                                <input type="text" class="form-control" id="LookUp Facility" />
+                            </div>
+
+                            <table style="width:100%">
+                                <tr>
+                                    <th>FacilityId</th>
+                                    <th>FacilityName</th>
+                                    <th>ModifiedBy</th>
+                                    <th>Action</th>
+                                    <th>Description</th>
+                                    <th>DateTime</th>
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row">
+                                <div> <label for="Name" class="col-md-2 control-label">Total Counts:0</label></div>
+                                <div class="form-group col-md-2" style="margin-left:05px">
+                                    <input type="text" class="form-control" id="Name" placeholder="Prev" />
+                                </div>
+
+                                <div><label for="Name" class="col-md-2 control-label">Page</label></div>
+                                <div class="form-group col-md-2" style="margin-left:05px">
+                                    <input type="text" class="form-control" id="Name" placeholder="Name" />
+                                </div>
+
+                                <div><label for="Name" class="col-md-2 control-label">of 1</label></div>
+                                <div class="form-group col-md-2" style="margin-left:05px">
+                                    <input type="text" class="form-control" id="Name" placeholder="Next" />
+                                </div>
+
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+

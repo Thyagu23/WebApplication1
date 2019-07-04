@@ -1,0 +1,286 @@
+﻿
+@{
+    ViewData["Title"] = "NewGuarantorRegistration";
+}
+
+<h2>NewGuarantorRegistration</h2>
+
+
+<div style="margin:auto;width:100%;border-radius:15px;border:1px solid #808080;padding:70px;">
+    <div class="container">
+        <section style="background-color:whitesmoke">
+            @*<div class="First_Tab">*@
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="list-group">
+
+                        <a href="#gua-tab1" class="list-group-item" style="width: 180px">General</a>
+                        <a href="#gua-tab2" class="list-group-item" style="width: 180px">Address</a>
+                        <a href="#gua-tab3" class="list-group-item" style="width: 180px">Employment</a>
+
+                    </div>
+                </div>
+                <div class="Display_01 col-md-9" id="gua-tab1" style="display:none;">
+                    <div class="row">
+
+                        <label for="Name" class="col-md-2 control-label">Type:</label>
+                        @*<div class="form-group col-md-3" style="margin-left:35px">
+                                <input type="text" class="form-control" id="Name" />
+                            </div>*@
+                        <select class="form-group col-md-3" align="right" id="myList" style="margin-left:05px">
+                            <option value="1">Individual</option>
+                            <option value="2">Company</option>
+                            <option value="3">Work Comp</option>
+
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="Name" class="col-md-5 control-label">Name(Last Name/Company Name):</label>
+                        <div class="form-group col-md-5" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Name" class="col-md-2 control-label">First Name:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+
+                        <label for="Address1" class="col-md-2 control-label">MI:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Address1" class="col-md-2 control-label">Guarantor Account No:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+
+                        <label for="Address1" class="col-md-2 control-label">DOB:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Address1" class="col-md-2 control-label">SSN:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+
+                        <label for="Address1" class="col-md-2 control-label">Telephone:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Address1" class="col-md-2 control-label">Email:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+
+                        <label for="Address1" class="col-md-2 control-label">Gender:</label>
+                        @*<div class="form-group col-md-3" style="margin-left:35px">
+            <input type="text" class="form-control" id="Address1" />
+        </div>*@
+                        <select class="form-group col-md-3" align="right" id="myList" style="margin-left:05px">
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                          
+
+                        </select>
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <input type="button" id="AssignmentOverride" value="Cancel" />
+                        <input type="button" id="Assignmide" value="OK" />
+                    </div>
+                </div>
+
+
+                <div class="Display_01 col-md-9" id="gua-tab2" style="display:none;">
+
+                    <div class="row">
+                        <h4><u>Mailing Address</u></h4>
+                        <div class="row">
+
+                            <label for="Name" class="col-md-2 control-label">Address 1:</label>
+                            <div class="form-group col-md-3" style="margin-left:35px">
+                                <input type="text" class="form-control" id="Name" />
+                            </div>
+
+                            <label for="Name" class="col-md-2 control-label">Address 2:</label>
+                            <div class="form-group col-md-3" style="margin-left:35px">
+                                <input type="text" class="form-control" id="Name" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <label for="Name" class="col-md-2 control-label">City:</label>
+                            <div class="form-group col-md-3" style="margin-left:35px">
+                                <input type="text" class="form-control" id="Name" />
+                            </div>
+
+                            <label for="Address1" class="col-md-2 control-label">State:</label>
+                            <div class="form-group col-md-3" style="margin-left:35px">
+                                <input type="text" class="form-control" id="Address1" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="Address1" class="col-md-2 control-label">Country:</label>
+                            <div class="form-group col-md-3" style="margin-left:35px">
+                                <input type="text" class="form-control" id="Address1" />
+                            </div>
+
+                            <label for="Address1" class="col-md-2 control-label">Zip:</label>
+                            <div class="form-group col-md-3" style="margin-left:35px">
+                                <input type="text" class="form-control" id="Address1" />
+                            </div>
+                        </div>
+                        <hr />
+                        <h4><u>Street Address(If Different from Mailing Address)</u></h4>
+                        <div class="row">
+
+                            <label for="Name" class="col-md-2 control-label">Address 1:</label>
+                            <div class="form-group col-md-3" style="margin-left:35px">
+                                <input type="text" class="form-control" id="Name" />
+                            </div>
+
+                            <label for="Name" class="col-md-2 control-label">Address 2:</label>
+                            <div class="form-group col-md-3" style="margin-left:35px">
+                                <input type="text" class="form-control" id="Name" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <label for="Name" class="col-md-2 control-label">City:</label>
+                            <div class="form-group col-md-3" style="margin-left:35px">
+                                <input type="text" class="form-control" id="Name" />
+                            </div>
+
+                            <label for="Address1" class="col-md-2 control-label">State:</label>
+                            <div class="form-group col-md-3" style="margin-left:35px">
+                                <input type="text" class="form-control" id="Address1" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="Address1" class="col-md-2 control-label">Country:</label>
+                            <div class="form-group col-md-3" style="margin-left:35px">
+                                <input type="text" class="form-control" id="Address1" />
+                            </div>
+
+                            <label for="Address1" class="col-md-2 control-label">Zip:</label>
+                            <div class="form-group col-md-3" style="margin-left:35px">
+                                <input type="text" class="form-control" id="Address1" />
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+
+                            <input type="button" id="AssignmentOverride" value="Cancel" />
+                            <input type="button" id="Assignmide" value="OK" />
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="Display_01 col-md-9" id="gua-tab3" style="display:none;">
+                    <div class="row">
+                        <label for="Name" class="col-md-2 control-label" placeholder="Employer Name">Search Employer:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+
+                        <label for="Name" class="col-md-2 control-label">Employer Name:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Name" class="col-md-2 control-label">Address 1:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+
+                        <label for="Name" class="col-md-2 control-label">Address 2:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Name" class="col-md-2 control-label">City:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Name" />
+                        </div>
+
+                        <label for="Address1" class="col-md-2 control-label">State:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Address1" class="col-md-2 control-label">Country:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+
+                        <label for="Address1" class="col-md-2 control-label">Zip:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="Address1" class="col-md-2 control-label">Work Phone:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+
+                        <label for="Address1" class="col-md-2 control-label">Ext:</label>
+                        <div class="form-group col-md-3" style="margin-left:35px">
+                            <input type="text" class="form-control" id="Address1" />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+
+                        <input type="button" id="AssignmentOverride" value="Cancel" />
+                        <input type="button" id="Assignmide" value="OK" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+
+
+        function hideTabs() {
+            $("#gua-tab1").hide();
+            $("#gua-tab2").hide();
+            $("#gua-tab3").hide();
+
+        }
+
+        $(".list-group-item").click(function () {
+
+            if ($(this).text() == "General") {
+                hideTabs();
+                $("#gua-tab1").show();
+            }
+            if ($(this).text() == "Address") {
+                hideTabs();
+                $("#gua-tab2").show();
+            }
+            if ($(this).text() == "Employment") {
+                hideTabs();
+                $("#gua-tab3").show();
+            }
+
+        });
+    })
+</script>

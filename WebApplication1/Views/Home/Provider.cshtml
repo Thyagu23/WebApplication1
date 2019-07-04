@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewData["Title"] = "Provider";
+}
+
+<h2>Provider</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin:auto;width:100%;border-radius:15px;border:1px solid #808080;padding:70px;">
+
+        <div class="row">
+            <div> <label for="Name" class="col-md-2 control-label">Provider </label></div>
+            <div class="form-group col-md-2" style="margin-left:05px">
+                <input type="text" class="form-control" id="LookUp Facility" />
+            </div>
+
+            <div class="form-group col-md-3" style="margin-left:05px">
+                <input type="text" class="form-control" id="Name" placeholder="Practicing Provider" />
+            </div>
+
+            <div class="form-group col-md-2" style="margin-left:05px">
+                <input type="text" class="form-control" id="Name" placeholder="All Specialities" />
+            </div>
+
+        </div>
+        <a href="~/Home/ProviderAddress"><input type=button value='Provider Address' /></a>
+        <a href="~/Home/ProviderID"><input type=button value='Provider ID' /></a>
+        @*<button type="button" data-toggle="modal" data-target="#Logs">Provider ID's</button>*@
+        <hr />
+
+        <table style="width:100%">
+            <tr>
+                <th>ProviderName</th>
+                <th>Speciality</th>
+                <th>Address1</th>
+                <th>Address2</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>Zip</th>
+                <th>Tel</th>
+                <th>Fax</th>
+                <th>NPI</th>
+            </tr>
+            <tr>
+                <td>Archana</td>
+                <td>Internal Medicine</td>
+                <td>4305 Walla</td>
+                <td>illilla</td>
+                <td>Dallas</td>
+                <td>Texas</td>
+                <td>USA</td>
+                <td>75231133111</td>
+                <td>901-901-9999</td>
+                <td>901-901-9999</td>
+                <td>1234567</td>
+            </tr>
+        </table>
+
+
+
+        <div class="modal-footer">
+            <input type="button" id="AssignmentOverride" value="Close" />
+            @*<input type="button" id="Assignmide" value="OK" />*@
+        </div>
+
+    </div>
+</body>
+</html>

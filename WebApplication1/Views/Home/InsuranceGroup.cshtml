@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewData["Title"] = "InsuranceGroup";
+}
+
+<h2>InsuranceGroup</h2>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin:auto;width:100%;border-radius:15px;border:1px solid #808080;padding:70px;">
+
+        <div class="modal-header">        
+            <div class=align:"left">
+                <a href="~/Home/NewInsuranceGroupRegistration"><input type=button align="left" value='NEW'></a>
+            </div>
+
+        </div>
+
+
+        <table style="width:100%">
+            <tr>
+                <th>Group ID</th>
+                <th>Insurance Group Name</th>
+                <th>Group Type</th>
+            </tr>
+
+        </table>
+
+
+
+
+
+        <div class="modal-footer">
+
+        </div>
+        <div class="modal-footer">
+
+            <input type="button" id="AssignmentOverride" value="Cancel" />
+            <input type="button" id="Assignmide" value="OK" />
+        </div>
+    </div>
+</body>
+</html>
+
+
